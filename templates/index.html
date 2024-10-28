@@ -1,0 +1,34 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'font-awesome3/css/all.css' %}">
+    <title>Weather Detector</title>
+</head>
+
+<body>
+    <nav>
+        <h1>Django Weather Detector</h1>
+    </nav>
+    <div class="div">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <input type="search" name="city" placeholder="Search City...">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+    <div class="container">
+        <h3 style="color: red;">{{city}}</h3>
+        <h3>Country Code: {{data.country}}</h3>
+        <h5>Coordinate: {{data.coord}} </h5>
+        <h5>Temperature: {{data.temp}} </h5>
+        <h5>Pressure: {{data.pressure}} </h5>
+        <h5>Humidity: {{data.humidity}} </h5>
+    </div>
+</body>
+
+</html>

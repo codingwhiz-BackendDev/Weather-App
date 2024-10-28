@@ -1,0 +1,98 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navbar Styles */
+nav {
+    background: linear-gradient(135deg, #4e8ef7, #ff6b6b);
+    color: #fff;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Form Styles */
+.div {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+/* Input Fields */
+input[type=search] {
+    width: 70%;
+    padding: 12px;
+    border-radius: 20px;
+    border: 1px solid #d1d9e6;
+    outline: none;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+    margin-right: 10px;
+}
+
+input[type=search]:focus {
+    border-color: #4e8ef7;
+}
+
+input[type=submit] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #ff6b6b;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover {
+    background-color: #e65a5a;
+}
+
+/* Weather Data Container */
+.container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: left;
+    line-height: 1.6;
+    margin: 20px auto;
+}
+
+.container h3 {
+    color: #ff6b6b;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.container h5 {
+    color: #555;
+    margin: 5px 0;
+}
